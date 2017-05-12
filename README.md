@@ -1,3 +1,5 @@
+### This code is associated with the paper "Single-molecule FRET unveils induced-fit mechanism for substrate selectivity in flap endonuclease 1". eLife, 2017. http://dx.doi.org/10.7554/eLife.21884
+
 # FRETmaker
 FRETmakerv14f is a matlab script designed to help process, organzie, and visualize FRET trajectories of single molecules. This script is specifically analyzes with trajectories exproted as **separate** donor and acceptor time traces from the SymPhoTime *FRET* script. The script outputs a histogram of the FRET states from all traces. Therefore, in a given session, all traces shoudl be from the same condition/experiment.
 This script interacts with the user primarily through text, but nearly all steps and syntax are explained by the script to the user to make for relatively intuitive use.
@@ -13,8 +15,8 @@ The format commonly used is this:
 and
 **bin size**msbin-**SymPhoTime file name**-A.dat for the *acceptor trace*
 For example: 
-5msbin-200nmFEN1WT-BTdfDNA-duplexlabeled3_x56.02µm_y21.41µm_z40.00µm_1-D.dat is a Donor trace
-5msbin-200nmFEN1WT-BTdfDNA-duplexlabeled3_x56.02µm_y21.41µm_z40.00µm_1-A.dat is an Acceptor trace
+5msbin-200nmFEN1WT-BTdfDNA-duplexlabeled3_x56.02Âµm_y21.41Âµm_z40.00Âµm_1-D.dat is a Donor trace
+5msbin-200nmFEN1WT-BTdfDNA-duplexlabeled3_x56.02Âµm_y21.41Âµm_z40.00Âµm_1-A.dat is an Acceptor trace
 Begninning with the bin size is more important in this project, as the dwellHAMMYf2 script uses this **bin size*msbin- to identify the bin size and allow it to process the results of HAMMY files, as HAMMY removes the bin size information from its result files. Using a system of identical naming except for donnor and acceptor identifier is just common sense so that file pairs are easily identified, reducing the chance of a mixup. The script does contain some checking functions verifying that you are using donor traces as donor traces- SymPhoTime includes a header for this in the .dat file, and that the traces are the same length, but still without a system, mistakes are very easy to make. It is also prefered to use in the middle, the name of the file in the SymPhoTime workspace that the trace was created from as this allows easy reference from trace seen in the script back to the original source data file.
 
 #dwellHAMMYf2
