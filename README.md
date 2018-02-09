@@ -1,4 +1,4 @@
-### This code is associated with the paper "Single-molecule FRET unveils induced-fit mechanism for substrate selectivity in flap endonuclease 1". eLife, 2017. http://dx.doi.org/10.7554/eLife.21884
+### This code is associated with the paper from Rashid et al., "Single-molecule FRET unveils induced-fit mechanism for substrate selectivity in flap endonuclease 1". eLife, 2017. http://dx.doi.org/10.7554/eLife.21884
 
 # FRETmaker
 FRETmakerv14f is a matlab script designed to help process, organzie, and visualize FRET trajectories of single molecules. This script is specifically analyzes with trajectories exproted as **separate** donor and acceptor time traces from the SymPhoTime *FRET* script. The script outputs a histogram of the FRET states from all traces. Therefore, in a given session, all traces shoudl be from the same condition/experiment.
